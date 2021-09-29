@@ -84,11 +84,13 @@ class Contest(Base):
         default=[])
 
     # The list of names of languages allowed in the contest.
+    # OIE: Cambiados los lenguajes por defecto a los permitidos en la OIE
+    # para minimizar errores al importar concursos
     languages = Column(
         ARRAY(String),
         nullable=False,
-        default=["C11 / gcc", "C++11 / g++", "Pascal / fpc"])
-
+#        default=["C11 / gcc", "C++11 / g++", "Pascal / fpc"])
+        default=["C11 / gcc", "C++11 / g++", "Java / JDK", "Python 3 / CPython"])
     # Whether contestants allowed to download their submissions.
     submissions_download_allowed = Column(
         Boolean,
