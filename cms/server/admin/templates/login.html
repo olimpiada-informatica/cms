@@ -12,10 +12,11 @@
     <div id="login-content">
 
 {% if admin is undefined %}
-<h1>Welcome</h1>
+<h1>Bienvenido</h1>
     {% if handler.get_argument("login_error", "") != "" %}
 <h4 class="alert">Failed to log in.</h4>
     {% endif %}
+<img src="static/img/logo.png"/>    
 <p>Please log in:</p>
 <form action="{{ url("login") }}" method="POST">
   {{ xsrf_form_html|safe }}

@@ -50,6 +50,7 @@ PACKAGE_DATA = {
         "static/*.*",
         "static/jq/*.*",
         "admin/static/*.*",
+        "admin/static/img/*.*",
         "admin/static/jq/*.*",
         "admin/static/sh/*.*",
         "admin/templates/*.*",
