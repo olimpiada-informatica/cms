@@ -281,8 +281,9 @@ var Scoreboard = new function () {
         } else if (score >= max_score) {
             return "score_100";
         } else {
-            var rel_score = parseInt(score / max_score * 10) * 10;
-            return "score_" + rel_score + "_" + (rel_score + 10);
+            var steps = 50;
+            var rel_score = parseInt(score / max_score * steps) * (100/steps);
+            return "score_" + rel_score + "_" + (rel_score + (100/steps));
         }
     };
 
