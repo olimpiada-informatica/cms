@@ -28,6 +28,11 @@ abbr {
     border-bottom: 1px dotted black;
 }
 
+#LogoPanel img {
+    max-width: 200px;
+    max-height: 160px;
+}
+
 /******************************************************************************\
 |                                                                              |
 |                                   Page layout                                |
@@ -1098,6 +1103,8 @@ abbr {
 #UserDetail_flag {
     margin: -1px;
     border: 1px solid gray;
+    max-width: 200px;
+    max-height: 100px;
 }
 
 #UserDetail_flag.hidden {
